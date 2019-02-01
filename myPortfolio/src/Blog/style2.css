@@ -1,0 +1,21 @@
+h1{
+    width: 70%;
+    margin: 5% auto;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+}
+
+main{
+    width:60%;
+    margin: 5% auto;
+    font-family:'Montserrat', sans-serif;
+}
+
+body{
+    background: lightblue;
+    font-family:'Montserrat', sans-serif;
+}
+
+article{
+    border: 2px solid darkorange;
+}
