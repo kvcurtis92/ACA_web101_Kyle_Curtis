@@ -1,109 +1,156 @@
-body {
+html { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url("royal-background-hd-9.jpg");
+}
+
+
+
+.container {
     font-family:'Montserrat', sans-serif;
-    background-image: url("royal-background-hd-9.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+      "header . main"
+      "nav    .   main"
+      "nav    . portfolio"
+      "nav . ."
+      "aside .  .";
+   }
+
+  header {
+    grid-area: header;
+    color: white;
+    font-size: 80px;
+    margin-bottom: 30px;
+    margin-left: 60px;
   }
-  
- h1 {
-   color: white
- }
+  main {
+    grid-area: main;
+  }
+  nav {
+    grid-area: nav;
+  }
+  aside {
+    grid-area: aside;
+  }
+  .portfolio {
+    grid-area: portfolio;
+  }
+
+  .logo {
+    width:120px;
+    margin-top: 20px;
+    margin-left: 60px;
+  }
 
  h2{
-   color: white
+   color: white;
+   font-size: 50px;
+   margin-left: 100px;
  }
 
-.logo {
-  width: 100px;
-  height: 100px;
-  margin: 3% 10%;
-  align-items: right
+.Contact{
+    background-color:#004475;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border: none;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:20px;
+    padding:16px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #36752d;
+    margin: 15px;
+    margin-left: 30px;
+    width: 120px;
+    text-align: center;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  width: 100%;
+.Contact:hover{
+	background-color:#082147;
 }
 
-main {
-  height: auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 30% 40% 30%;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: relative;
-}  
-
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #555;
-  color: white;
-}
-
-.has-border {
-  border-radius: 25px;
-  border: 2px solid #0795C3;
-  background: none;
-  padding: 20px; 
-}
-
-
-#profile-pic {
-  width: 300x;
-  height: 300px;
-  border-radius: 100%;
-  margin: 15% auto;
-  grid-column: 2/3;
-  position: relative;
-  right: 50px; 
-}
-
-h1 {
-  color:white;
-  grid-column: 2/3;
-  margin: 3% auto;
-  border-bottom: 2px solid #1940A9;;
-  font-size: 80px
-}
-
-h2 {
-  grid-column: 2/3;
-  margin: 3% auto;
-  font-style: italic;
-  font-size: 60px
-}
-
-button {
-  grid-column: 2/3;
-  margin: 3% auto;
-  width: 70%;
-  height: 15%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  border-radius: 25px;
-  background: transparent;
-  padding: 20px; 
-  padding-bottom: 5%;
+.Resume {
+  background-color:#004475;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  border:none;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Trebuchet MS;
+  font-size:20px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #36752d;
+  margin: 15px;
+  margin-left: 30px;
+  width: 120px;
   text-align: center;
-  color: white;
-  letter-spacing: 16px;
-  font-style: italic;
 }
 
-@media (min-width: 480px) {
-  display: none;
+.Resume:hover {
+background-color:#082147;
+}
+
+.About {
+  background-color:#004475;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  border: none;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Trebuchet MS;
+  font-size:20px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #36752d;
+  margin: 15px;
+  margin-left: 30px;
+  width: 120px;
+  text-align: center;
+}
+
+.About:hover{
+background-color:#082147;
+}
+
+.Blog{
+  background-color:#004475;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  border:none;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Trebuchet MS;
+  font-size:20px;
+  padding:16px 31px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #36752d;
+  margin: 15px;
+  margin-left: 30px;
+  width: 120px;
+  text-align: center;
+}
+
+.Blog:hover{
+background-color:#082147;
+}
+
+.profile-pic {
+  height: 450px;
+  border-radius: 50%; 
+  margin: 30px;
+  margin-right: 80px;
 }
