@@ -1,0 +1,64 @@
+html { 
+    background-image: url("/src/Nasa/hd-sci-fi-wallpaper_010015384_283.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1500px;
+}
+
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    border-bottom: 5px white;
+}
+
+img {
+    margin: 30px;
+    width:300px;height:300px;
+}
+
+
+.textbox1{
+    color:white;
+    width: 300px;
+    margin: 30px;
+}
+
+.textbox2{
+    color:white;
+    width: 300px;
+    margin: 30px;
+}
+
+.textbox3{
+    color:white;
+    width: 300px;
+    margin: 30px;
+}
+
+.textbox4{
+    color:white;
+    width: 300px;
+    margin: 30px;
+}
+
+.textbox5{
+    color:white;
+    width: 300px;
+    margin: 30px;
+}
+
+.textbox6{
+    color:white;
+    width: 300px;
+    margin: 30px;
+}
