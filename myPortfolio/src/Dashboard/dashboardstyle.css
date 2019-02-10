@@ -3,46 +3,81 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-image: url(/myPortfolio/src/Dashboard/amazing-animal-beautiful-beautifull.jpg);
+    background-repeat: no-repeat;
+    background-image: url(/myPortfolio/src/Dashboard/Zen\ Dojo\ Wallpaper.jpg)
   }
 
   .container {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 300px 100px 300px 100px;
+    grid-template-rows: auto 100px 100px 100px 300px 100px;
     grid-template-areas: 
       ". greeting ."
+      ". . ."
       ". date ."
       ". time ."
-      "calculator . todo";
+      "calculator . todo"
+      ". . ."
   }
 
   .greeting {
       grid-area: greeting;
       color: white;
       font-size: 60px;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
 
   .date {
       grid-area: date;
       color: white;
       font-size: 80px;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
 
   .time {
       grid-area: time;
       color: white;
       font-size: 60px;
-  }
-
-  .calculator {
-      grid-area: calculator;
-      color: white;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
 
   .todo {
       grid-area: todo;
       color: white;
       font-size: 50px;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  }
+
+  .calculator{
+    grid-area: calculator;
+    display:flex;
+    background:#993300;
+    width: 300px;
+    height: 350px;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .screen {
+    width:280px;
+    height: 50px;
+    background-color:white;
+    margin: 10px;
+    alignment: center;
+  }
+  
+  .calculator > div:not(:first-child)
+   {
+    width: 65px;
+    height: 40px;
+    background: white;
+    margin: 2px;
+    border: 20px black;
+    text-align: center;
+  }
+  
+  .zero{
+    width: 130px !important;
   }
