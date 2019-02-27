@@ -1,0 +1,17 @@
+div {
+    border: 3px solid black;
+    width: 50px;
+    height: 50px; 
+    justify-content: center;
+    margin: 10px; 
+}
+
+div:hover:nth-child(odd){
+    width: 100px;
+    height: 100px; 
+}
+
+div:hover:nth-child(even){
+    width: 25px;
+    height: 25px;
+}
