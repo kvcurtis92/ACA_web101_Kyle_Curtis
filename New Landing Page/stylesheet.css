@@ -1,0 +1,43 @@
+@media (min-width: 576px) {
+
+    ul {
+        list-style-type: none;
+        margin: none;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      li {
+        float: left;
+        margin: none; 
+        text-align: center; 
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center; 
+      }
+      
+      li a:hover {
+        background-color: #111;
+      }
+
+      .title {
+        text-align: center;
+        color: white;
+        background-color: #4a3ce0;
+        margin: none;
+        height: 100px;
+      }
+
+      .profile {
+          width: 576px;
+      }
+    }
