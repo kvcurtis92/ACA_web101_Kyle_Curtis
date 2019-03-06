@@ -1,0 +1,45 @@
+@media screen and 
+  (min-width: 992px) {
+    html { 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-image: url("/myPortfolio/Portfolio Page/Royal2.jpg");
+      }
+      
+    h1 {
+        display: flex; 
+        color: white; 
+        font-size: 100px; 
+        justify-content: center;
+    }
+
+    .container {
+        display: flex; 
+        flex-direction: column;
+        text-align: center; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    button {
+    background-color:#004475;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border: none;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:20px;
+    padding:16px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #36752d;
+    margin: 15px;
+    margin-left: 30px;
+    width: 200px;
+    text-align: center;
+    }
+  }
