@@ -4,7 +4,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/ACA_web101_Kyle_Curtis/myPortfolio/src/Dashboard/Zen Dojo Wallpaper.jpg");
+  background-image: url("/src/Dashboard/Zen\ Dojo\ Wallpaper.jpg");
   max-width: 100%;
 }
 
@@ -103,7 +103,7 @@ html {
   html {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/ACA_web101_Kyle_Curtis/myPortfolio/src/Dashboard/Zen Dojo Wallpaper.jpg");
+  background-image: url("/src/Dashboard/Zen\ Dojo\ Wallpaper.jpg");
   max-width: 100%;
 }
 
@@ -208,7 +208,7 @@ html {
   html {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/ACA_web101_Kyle_Curtis/myPortfolio/src/Dashboard/phone wallpaper japanese art.jpg");
+  background-image: url("/src/Dashboard/phone\ wallpaper\ japanese\ art.jpg");
   max-width: 100%;
 }
 
