@@ -1,298 +1,399 @@
-html { 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("/src/Dashboard/Zen\ Dojo\ Wallpaper.jpg");
-  max-width: 100%;
-}
 
-.container {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 9fr 300px;
-  grid-template-rows: auto 100px 100px 100px 300px 100px;
-  grid-template-areas: 
-    ". greeting1 ."
-    ". . ."
-    ". date ."
-    ". time ."
-    "calculator . todo"
-    ". . ."
-}
-
-.greeting1 {
-    grid-area: greeting1;
-    color: white;
-    font-size: 45px;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-
-.greeting2 {
-  display:none;
-}
-
-.greeting3 {
-  display:none;
-}
-
-.greeting4 {
-  display:none;
-}
-
-.date {
-    grid-area: date;
-    color: white;
-    font-size: 80px;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-
-.time {
-    grid-area: time;
-    color: white;
-    font-size: 60px;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-
-.todo {
-    grid-area: todo;
-    color: white;
-    font-size: 50px;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-
-.calculator{
-  grid-area: calculator;
-  display:flex;
-  background:#993300;
-  width: 300px;
-  height: 350px;
-  flex-direction:row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.screen {
-  width:280px;
-  height: 50px;
-  background-color:white;
-  margin: 10px;
-  alignment: center;
-}
-
-.calculator > div:not(:first-child)
- {
-  width: 65px;
-  height: 40px;
-  background: white;
-  margin: 2px;
-  border: 20px black;
-  text-align: center;
-}
-
-.zero{
-  width: 130px !important;
-}
-
-/* ----------- Tablet----------- */
+/* ----------- Desktop ----------- */
 
 
-@media (max-width: 1200px) {
+@media (max-width: 2000px ) {
 
-  html {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("/src/Dashboard/Zen\ Dojo\ Wallpaper.jpg");
-  max-width: 100%;
-}
-
+    html { 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-image: url("/src/Dashboard/Zen\ Dojo\ Wallpaper.jpg");    
+  }
+  
   .container {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: auto 100px 100px 100px 300px 100px;
+    grid-template-columns: auto 9fr auto;
+    grid-template-rows: 100px 100px 100px 50px 200px;
     grid-template-areas: 
-      ". greeting2 ."
       ". . ."
       ". date ."
       ". time ."
-      "calculator . todo"
-      ". . ."
+      ". . . "
+      ". clicker ."
   }
-
-  .greeting1 {
-    display: none;
-  }
-
-  .greeting2 {
-      grid-area: greeting2;
-      display: inline-block;
-      color: white;
-      font-size: 35px;
-      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  }
-
-  .greeting3 {
-    display: none;
-  }
-
-  .greeting4 {
-    display: none;
-  }
-
+  
   .date {
       grid-area: date;
+      color: white;
+      font-size: 80px;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  }
+  
+  .time {
+      grid-area: time;
       color: white;
       font-size: 60px;
       text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
-
-  .time {
-      grid-area: time;
-      color: white;
-      font-size: 50px;
-      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  }
-
-  .todo {
-      grid-area: todo;
-      color: white;
-      font-size: 35px;
-      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  }
-
-  .calculator{
-    grid-area: calculator;
-    display:flex;
-    background:#993300;
-    width: 280px;
-    height: 330px;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: center;
+  
+  #clicker {
+      grid-area: clicker;
+      display: flex;
+      justify-content: center; 
+      background-color: #d33b10; 
+      padding-top: 25px; 
   }
   
+  h1 {
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    margin-right: 25px;
+  }
+  
+  .button {
+    width:200px;
+    height:20px;
+    border:1px solid black;
+    border-radius:25px;
+    text-align: center;
+    cursor:pointer;  
+    background-color: white; 
+    margin: 10px; 
+  }
+  
+  
   .screen {
-    width:260px;
+    width:280px;
     height: 50px;
     background-color:white;
     margin: 10px;
     alignment: center;
   }
   
-  .calculator > div:not(:first-child)
-   {
-    width: 60px;
-    height: 30px;
-    background: white;
-    margin: 2px;
-    border: 20px black;
-    text-align: center;
-  }
   
   .zero{
-    width: 115px !important;
+    width: 130px !important;
   }
-}
-
-@media (max-width: 1000px) {
-  .date {
-    font-size: 45px;
+  
+  #flower {
+    width:150px;
+    height:150px;
+    background-color: white;
+  }
+  
+  img {
+    transition: all 3s;
+    transition-timing-function: linear;
+  }
+  
+  #currentTotal {
+    width:150px;
+    height:50px;
+    border:1px solid black;
+    text-align: center;
+    font-size: 48px;
   }
 
-/* ----------- Mobile ----------- */
-
-@media (max-width: 400px) {
-
-  html {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("/src/Dashboard/phone\ wallpaper\ japanese\ art.jpg");
-  max-width: 100%;
 }
+  
+/* ----------- Tablet ----------- */
 
+@media (max-width: 700px) {
+
+  html { 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url("/src/Dashboard/Zen\ Dojo\ Wallpaper.jpg");    
+}
+  
   .container {
     text-align: center;
     display: grid;
-    grid-template-columns: auto 380px auto;
-    grid-template-rows: 75px 50px 50px 75px 75px 75px;
+    grid-template-columns: auto 9fr auto;
+    grid-template-rows: 50px 100px 100px 50px 200px 50px;
     grid-template-areas: 
-      ". greeting3 ."
       ". . ."
       ". date ."
       ". time ."
-      ". todo ."
-      ". calculator ."
+      ". . . "
+      ". clicker ."
+      ". . ." 
   }
-
-  .greeting1 {
-    display: none;
+  
+  .date {
+      grid-area: date;
+      color: white;
+      font-size: 80px;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
-
-  .greeting2 {
-    display: none;
+  
+  .time {
+      grid-area: time;
+      color: white;
+      font-size: 60px;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
-
-  .greeting3 {
-    grid-area: greeting3;
-    display: inline-block;
+  
+  #clicker {
+      grid-area: clicker;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; 
+      background-color: #d33b10; 
+      padding-top: 25px; 
+  }
+  
+  h1 {
     color: white;
-    font-size: 20px;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    margin-right: 25px;
+  }
+  
+  .button {
+    width:200px;
+    height:20px;
+    border:1px solid black;
+    border-radius:25px;
+    text-align: center;
+    cursor:pointer;  
+    background-color: white; 
+    margin: 10px; 
+  }
+  
+  
+  .screen {
+    width:280px;
+    height: 50px;
+    background-color:white;
+    margin: 10px;
+    alignment: center;
+  }
+  
+  .zero{
+    width: 130px !important;
+  }
+  
+  #flower {
+    width:150px;
+    height:150px;
+    background-color: white;
+  }
+  
+  img {
+    transition: all 3s;
+    transition-timing-function: linear;
+  }
+  
+  #currentTotal {
+    width:150px;
+    height:50px;
+    border:1px solid black;
+    text-align: center;
+    font-size: 48px;
   }
 
+}
+
+/* ----------- Tablet ----------- */
+
+@media (max-width: 500px) {
+
+  html { 
+    background-size: cover;
+    background-image: url("/src/Dashboard/Zen\ Dojo\ Wallpaper.jpg");
+    max-width: 100%;
+  }
+  
+  .container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto 9fr auto;
+    grid-template-rows: 50px 100px 100px 50px 200px 50px;
+    grid-template-areas: 
+      ". . ."
+      ". date ."
+      ". time ."
+      ". . . "
+      ". clicker ."
+      ". . ." 
+  }
+  
+  .date {
+      grid-area: date;
+      color: white;
+      font-size: 60px;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  }
+  
+  .time {
+      grid-area: time;
+      color: white;
+      font-size: 40px;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  }
+  
+  #clicker {
+      grid-area: clicker;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; 
+      background-color: #d33b10; 
+      padding-top: 25px; 
+  }
+  
+  h1 {
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    margin-right: 25px;
+    font-size: 30px; 
+  }
+  
+  .button {
+    width:200px;
+    height:20px;
+    border:1px solid black;
+    border-radius:25px;
+    text-align: center;
+    cursor:pointer;  
+    background-color: white; 
+    margin: 10px; 
+  }
+  
+  
+  .screen {
+    width:280px;
+    height: 50px;
+    background-color:white;
+    margin: 10px;
+    alignment: center;
+  }
+  
+  .zero{
+    width: 130px !important;
+  }
+  
+  #flower {
+    width:150px;
+    height:150px;
+    background-color: white;
+  }
+  
+  img {
+    transition: all 3s;
+    transition-timing-function: linear;
+  }
+  
+  #currentTotal {
+    width:150px;
+    height:50px;
+    border:1px solid black;
+    text-align: center;
+    font-size: 48px;
+  }
+
+}
+
+/* ----------- Phone ----------- */
+
+@media (max-width: 500px) {
+
+  html { 
+    background-size: cover;
+    background-image: url("phone\ wallpaper\ japanese\ art.jpg");
+    max-width: 100%;
+  }
+  
+  .container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto 9fr auto;
+    grid-template-rows: 50px 100px 100px 50px 200px 50px;
+    grid-template-areas: 
+      ". . ."
+      ". date ."
+      ". time ."
+      ". . . "
+      ". clicker ."
+      ". . ." 
+  }
+  
   .date {
       grid-area: date;
       color: white;
       font-size: 30px;
       text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
-
+  
   .time {
       grid-area: time;
       color: white;
-      font-size: 25px;
+      font-size: 20px;
       text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  }
-
-  .todo {
-      grid-area: todo;
-      color: white;
-      font-size: 30px;
-      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  }
-
-  .calculator{
-    grid-area: calculator;
-    display:flex;
-    background:#993300;
-    width: 140px;
-    height: 165px;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: center;
   }
   
+  #clicker {
+      grid-area: clicker;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; 
+      background-color: #d33b10; 
+      padding-top: 25px; 
+      font-size: 25px; 
+  }
+  
+  h1 {
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    margin-right: 25px;
+    font-size: 30px; 
+  }
+  
+  .button {
+    width:200px;
+    height:20px;
+    border:1px solid black;
+    border-radius:25px;
+    text-align: center;
+    cursor:pointer;  
+    background-color: white; 
+    margin: 10px; 
+  }
+  
+  
   .screen {
-    width:130px;
-    height: 25px;
+    width:280px;
+    height: 50px;
     background-color:white;
-    margin: 5px;
+    margin: 10px;
     alignment: center;
   }
   
-  .calculator > div:not(:first-child){
-    width: 30px;
-    height: 15px;
-    background: white;
-    margin: 1px;
-    border: 20px black;
-    text-align: center;
+  .zero{
+    width: 130px !important;
   }
   
-  .zero{
-    width: 115px !important;
+  #flower {
+    width:150px;
+    height:150px;
+    background-color: white;
   }
-}
+  
+  img {
+    transition: all 3s;
+    transition-timing-function: linear;
+  }
+  
+  #currentTotal {
+    width:150px;
+    height:50px;
+    border:1px solid black;
+    text-align: center;
+    font-size: 48px;
+  }
+
 }
